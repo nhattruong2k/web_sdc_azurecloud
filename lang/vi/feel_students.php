@@ -1,0 +1,31 @@
+<?php
+
+return [
+    'management' => 'Quản lý cảm nhận HV',
+    'list' => 'Danh sách cảm nhận học viên',
+    'create' => 'Thêm mới cảm nhận học viên',
+    'update' => 'Cập nhập cảm nhận học viên',
+    'create_successfully' => 'Thêm mới cảm nhận học viên thành công',
+    'update_successfully' => 'Cập nhập cảm nhận học viên thành công',
+    'delete_successfully' => 'Xóa cảm nhận học viên thành công',
+    'create_error' => 'Thêm mới cảm nhận học viên thất bại',
+    'update_error' => 'Cập nhập cảm nhận học viên thất bại',
+    'name' => 'Tên học viên',
+    'avatar' => 'Ảnh đại diện',
+    'status' => 'Trạng thái',
+    'active' => 'Hoạt dộng',
+    'content' => 'Nội dung',
+    'validation' => [
+        'avatar_empty' => 'Ảnh đại diện học viên không được để trống',
+        'avatar_required-without' => 'Ảnh đại diện học viên không được để trống',
+        'avatar_image' => 'Vui lòng nhập đúng định dạng cho ảnh',
+        'avatar_mimes' => 'Ảnh đại diện không đúng định dạng (jpg, jpeg, png)',
+        'name_min' => 'Tên học viên không được ít hơn :amount kí tự',
+        'name_required' => 'Tên học viên không được để trống',
+        'name_empty' => 'Tên học viên không được để trống',
+        'content_required' => 'Nội dung cảm nhận của học viên không được để trống',
+        'content_max' => 'Nội dung cảm nhận của học viên không được nhiều hơn :amount kí tự',
+        'content_empty' => 'Nội dung cảm nhận của học viên không được để trống',
+    ],
+    'status_successfully' => 'Thay đổi trạng thái cảm nhận học viên thành công',
+];

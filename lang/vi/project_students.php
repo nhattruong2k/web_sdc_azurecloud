@@ -1,0 +1,38 @@
+<?php
+
+return [
+    'management' => 'Quản lý sản phẩm HV',
+    'list' => 'Danh sách sản phẩm học viên',
+    'create' => 'Thêm mới sản phẩm học viên',
+    'update' => 'Cập nhập sản phẩm học viên',
+    'create_successfully' => 'Thêm mới sản phẩm học viên thành công',
+    'update_successfully' => 'Cập nhập sản phẩm học viên thành công',
+    'delete_successfully' => 'Xóa sản phẩm học viên thành công',
+    'status_successfully' => 'Thay đổi trạng thái sản phẩm học viên thành công',
+    'create_error' => 'Thêm mới sản phẩm học viên thất bại',
+    'update_error' => 'Cập nhập sản phẩm học viên thất bại',
+    'title' => 'Tên dự án',
+    'image' => 'Ảnh',
+    'description' => 'Mô tả dự án',
+    'status' => 'Trạng thái',
+    'active' => 'Hoạt động',
+    'author' => 'Tác giả',
+    'link' => 'Đường dẫn',
+    'validation' => [
+        'title_required' => "Ảnh sản phẩm học viên không được để trống",
+        'image_empty' => 'Ảnh sản phẩm học viên không được để trống',
+        'image_required-without' => 'Ảnh sản phẩm học viên không được để trống',
+        'image_img' => 'Vui lòng nhập đúng định dạng cho ảnh',
+        'image_mimes' => 'Ảnh không đúng định dạng (jpg, png, jpeg)',
+        'title_min' => 'Tên sản phẩm học viên không được ít hơn :amount kí tự',
+        'title_exist' => 'Tên sản phẩm học viên <strong>:title</strong> đã tồn tại',
+        'title_unique' => 'Tên sản phẩm học viên :title đã tồn tại',
+        'title_empty' => 'Tên sản phẩm học viên không được để trống',
+        'title_max' => 'Tên sản phẩm học viên không được nhiều hơn :amount ký tự',
+        'link_required' => 'Đường dẫn sản phẩm học viên không được để trống',
+        'link_empty' => 'Đường dẫn sản phẩm học viên không được để trống',
+        'link_regex' => 'Vui lòng nhập đường dẫn iframe hợp lệ',
+    ],
+    'list_new' => 'Danh sách sản phẩm học viên mới',
+    
+];

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <system.webServer>
+    <httpErrors>
+
+    </httpErrors>
+    <tracing>
+      <traceFailedRequests>
+        <clear/>
+      </traceFailedRequests>
+    </tracing>
+	<rewrite>
+      <rules>
+	  <rule name="React Routes" stopProcessing="true">  
+                    <match url=".*" />  
+                    <conditions logicalGrouping="MatchAll">  
+                        <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />  
+                        <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />  
+                        <add input="{REQUEST_URI}" pattern="^/(api)" negate="true" />  
+						<add input="{REQUEST_URI}" pattern="^/(admin)" negate="true" />  
+                        <add input="{REQUEST_URI}" pattern="^/(docs)" negate="true" />  
+                    </conditions>  
+                    <action type="Rewrite" url="/" />  
+                </rule>  
+		<!-- Quitar los slash '/' del final de la ruta -->
+		<rule name="RewriteRequestsToPublic">
+          <match url="^(.*)$" />
+          <conditions logicalGrouping="MatchAll" trackAllCaptures="false">
+          </conditions>
+          <action type="Rewrite" url="/{R:0}" />
+        </rule>
+
+		<!-- Si el archivo o carpeta solicitado no existe, se realiza la petición a través de index.php -->
+        <rule name="Imported Rule 1" stopProcessing="true">
+          <match url="^(.*)$" ignoreCase="false" />
+          <conditions logicalGrouping="MatchAll">
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="/index.php/{R:1}" appendQueryString="true" />
+        </rule>
+      </rules>
+    </rewrite>
+  </system.webServer>
+</configuration>

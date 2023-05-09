@@ -1,0 +1,36 @@
+<?php
+
+return [
+    'list' => 'Danh sách banner',
+    'management' => 'Quản lý banner',
+    'update' => 'Cập nhập banner',
+    'create' => 'Thêm mới banner',
+    'title' => 'Tên banner',
+    'link' => 'Ảnh',
+    'description' => 'Mô tả banner',
+    'status' => 'Trạng thái',
+    'create_successfully' => 'Thêm mới banner thành công',
+    'create_error' => 'Thêm mới banner thất bại',
+    'update_error' => 'Cập nhật banner thất bại',
+    'update_successfully' => 'Cập nhật banner thành công',
+    'delete_successfully' => 'Xóa banner thành công',
+    'delete_error' => 'Xóa banner thất bại',
+    'active' => 'Hoạt động',
+    'status_successfully' => 'Thay đổi trạng thái banner thành công',
+    'url' => 'Link Banner',
+    'validation' => [
+        'title_required' => 'Tên banner không được để trống',
+        'title_max' => 'Tên banner không được nhiều hơn :amount ký tự',
+        'link_required' => 'Ảnh banner không được để trống',
+        'link_image' => 'Vui lòng nhập dạng hình ảnh cho banner',
+        'link_mimes' => 'Ảnh banner không đúng định dạng (jpg, png, jpeg)',
+        'title_unique' => 'Tên banner đã tồn tại',
+        'link_required-without' => 'Vui lòng chọn ảnh, ảnh chưa tồn tại',
+        'title_empty' => 'Tên banner không được để trống',
+        'title_min' => 'Tên banner không được ít hơn :amount ký tự',
+        'title_exist' => 'Tên <strong>:title</strong> đã tồn tại',
+        'link_empty' => 'Ảnh banner không được để trống',
+        'description_max' => 'Mô tả banner không được nhiều hơn :amount ký tự',
+        'url_regex'=>'Xin vui lòng điền đúng đường dẫn',
+    ]
+];

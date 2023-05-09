@@ -1,0 +1,33 @@
+<?php
+
+return [
+    'management' => 'Quản lý cấu hình',
+    'list' => 'Danh sách cấu hình',
+    'create' => 'Thêm mới cấu hình',
+    'update' => 'Cập nhập cấu hình',
+    'create_successfully' => 'Thêm mới cấu hình thành công',
+    'update_successfully' => 'Cập nhập cấu hình thành công',
+    'delete_successfully' => 'Xóa cấu hình thành công',
+    'create_error' => 'Thêm mới cấu hình thất bại',
+    'update_error' => 'Cập nhập cấu hình thất bại',
+    'key' => 'Key',
+    'value' => 'Giá trị thông số',
+    'status' => 'Trạng thái',
+    'active' => 'Hoạt động',
+    'validation' => [
+        'key_empty' => 'Thông số không được để trống',
+        'key_exist' => 'Thông số <strong>:key</strong> đã tồn tại',
+        'key_min' => 'Thông số không được ít hơn :amount ký tự',
+        'value_empty' => 'Giá trị thông số không được để trống',
+        'key_required-without' => 'Thông số không được để trống',
+        'key_unique' => 'Thông số đã tồn tại',
+        'value_required' => 'Giá trị thông số không được để trống',
+        'max_length' => 'Giá trị thông số tối đa 255 ký tự',
+        'key_space' => 'Không đúng định dạng',
+    ],
+    'status_successfully' => 'Thay đổi trạng thái cấu hình thành công',
+    'create_successfully' => 'Thêm mới cấu hình thành công',
+    'update_successfully' => 'Cập nhập cấu hình thành công',
+    'delete_successfully' => 'Xóa cấu hình thành công',
+    'update_error' => 'Cập nhập cấu hình thất bại',
+];
